@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./30.2.js" defer></script>
+    <title>30.2</title>
+    <style>
+        :root {
+        font-size: 62.5%;
+      }
+      body,
+      html * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5rem;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;
+        height: 100vh;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+        height: 12rem;
+      }
+      input{
+        border-radius: 0.5rem;
+      }
+      button {
+        width: 13rem;
+        height: 3rem;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+      h1 {
+        margin-bottom: 3rem;
+        font-size: 4rem;
+      }
+      .container {
+        width: 95%;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      #poster {
+        width: 60%;
+        height: 80%;
+        background: white;
+        margin-right: 3rem;
+      }
+      ul {
+        list-style: none;
+        visibility: hidden;
+    }
+    ul.visible {
+          visibility: visible;
+      }
+      li {
+        margin: 3rem 0;
+      }
+
+      .movie-info{
+        width: 50%;
+        line-height: 150%;
+      }
+      #poster {
+        max-width: 630px;
+      }
+      
+    </style>
+</head>
+<body>
+    <h1>Search a movie by name</h1>
+    <form>
+        <label for="search-bar"></label>
+        <input type="text" id="search-bar" name="search-bar">
+        <button>Search</button>
+    </form>
+    <div class="container">
+        <div id="poster"></div>
+        <div class="movie-info">
+            <ul>
+                <li id="title">Movie title:</li>
+                <li id="genre">Genre:</li>
+                <li id="year">Year:</li>
+                <li id="plot">Plot:</li>
+                <li id="director">Director:</li>
+                <li id="actors">Actors:</li>
+                <li><strong>Ratings:</strong>
+                    <ul id="nested-ul">
+                        <li id="imdb">IMDB:</li>
+                        <li id="tomatoes">rotten tomatoes:</li>
+                        <li id="metacritic">Metacritic:</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
